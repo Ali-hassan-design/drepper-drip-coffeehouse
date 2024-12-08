@@ -1,0 +1,245 @@
+/* Banner styles */
+.banner {
+    width: 100%;
+    height: 300px; /* Fixed height */
+    background: url('https://img.freepik.com/premium-photo/coffee-cup-roasted-coffee-beans-burlap-bag-black-background-banner-copy-space_271740-6635.jpg?w=826') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .banner-content {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay */
+    z-index: 1;
+  }
+
+  .about{
+    text-align: center;
+    padding-left: 50px;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #our{
+    text-align: center;
+    background-color: #653818;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  }
+  .about-img {
+  float: right;
+  display: grid;
+  margin-left: 40px; 
+  margin-bottom: 15px; 
+ padding-left: 60px;
+  max-width: 50%; 
+  height: 10%;
+}
+.navbar-nav .nav-link {
+  color: #ffffff; /* Default text color */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #ff9900; /* Change to a highlight color on hover */
+  text-decoration: underline; /* Add an underline effect */
+}
+
+
+
+   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Keeps the navbar on top of other content */
+  }
+  body {
+    padding-top: 75px; /* Adjust to navbar height */
+  }
+/* 
+  .product-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 77px;
+      align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  } */
+
+  /* Product Section Styling */
+.product h5 {
+  font-size: 50px;
+  color: #fffdfd;
+  text-decoration: underline;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.product p{
+  font-size: 15px;
+  color: #fffdfd;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product h2 {
+  font-size: 90px;
+  color: #653818;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  border: none;
+  background-color: #653818;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+.card:hover .card-body {
+  background-color: #653818;
+}
+
+
+
+
+
+.footer {
+  background-color: #343a40;
+  color: white;
+}
+
+.footer h5 {
+  font-size: 1.25rem;
+  color: #ffcb05;
+}
+
+.footer .border-bottom {
+  border-color: #ffcb05 !important;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffcb05;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffc107;
+}
+
+.footer .footer-icon {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* @media (max-width: 576px) {
+  .footer-icon {
+    display: block;
+    margin-bottom: 1rem;
+  }
+} */
+
+/* Style for the carousel container */
+#demo {
+  width: 100%; /* Fixed width */
+  height:400px; /* Fixed height */
+  margin: auto; /* Center the carousel */
+  overflow: hidden; /* Hide overflowing content */
+  border: 2px solid #ddd; /* Optional border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+/* Ensure images fit within the container */
+.carousel-inner img {
+  object-fit: cover; /* Ensures images cover the carousel area */
+  width: 100%;
+  height: 100%;
+}
+
+/* Customize control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Round icons */
+  padding: 10px; /* Space around icons */
+}
+
+.carousel-indicators button {
+  width: 12px; /* Indicator size */
+  height: 12px;
+  border-radius: 50%; /* Make dots round */
+  background-color: rgba(255, 255, 255, 0.5); /* Indicator color */
+  border: none; /* Remove borders */
+}
+
+.carousel-indicators .active {
+  background-color: #007bff; /* Active indicator color */
+}
+
+
+.card {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(100px); /* Move to the right by default */
+  transition: all 0.6s ease-in-out; /* Smooth animation */
+}
+
+.card.left {
+  transform: translateX(-100px); /* Move to the left for top row */
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateX(0); /* Bring back to the original position */
+}
